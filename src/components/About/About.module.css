@@ -1,0 +1,36 @@
+.wrapper {
+  text-align: center;
+}
+.title {
+  margin-bottom: 0.2rem;
+}
+.underline {
+  width: 220px;
+  height: 2px;
+  background: #5e3c40;
+  margin: 1rem auto 1.5rem;
+}
+.lead {
+  max-width: 70ch;
+  margin: 0 auto 2rem;
+  color: #333;
+  font-size: clamp(1rem, 1.8vw, 1.125rem);
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  background: #555;
+  color: #ddd;
+  padding: 1rem;
+  border-radius: 0.6rem;
+}
+.h3 {
+  color: #fff;
+  margin: 0.25rem 0 0.5rem;
+}
+ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  text-align: left;
+}

@@ -1,0 +1,167 @@
+/* ===============================
+   Business Card — Clean Modern UI
+   =============================== */
+
+.bigwrapper {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.wrapper {
+  perspective: 120rem;
+  width: 32rem;
+  height: 18rem;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  border-radius: 1.2rem;
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.18);
+  transition: transform 1s;
+}
+
+/* Flip */
+.wrapper:hover .card {
+  transform: rotateY(360deg);
+}
+
+/* Front & Back shared */
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  backface-visibility: hidden;
+}
+
+/* ===============================
+   FRONT SIDE
+   =============================== */
+
+.front {
+  display: flex;
+  background: #ffffff;
+}
+
+/* Left (logo) */
+.frontLeft {
+  width: 40%;
+  padding: 1.2rem;
+  border-right: 1px solid #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 70%;
+  max-width: 140px;
+}
+
+.frontLeft h4 {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #656262;
+  letter-spacing: 0.04rem;
+}
+
+.frontLeft span {
+  color: #666;
+}
+
+/* Right side */
+.frontRight {
+  width: 60%;
+  padding: 1.4rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* Generic text row */
+.text {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Icon */
+.text i {
+  width: 2.2rem;
+  height: 2.2rem;
+  background: #ffa500;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Name block */
+.person {
+  background: #545151;
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 0.6rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.person h4 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.person p {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* ===============================
+   BACK SIDE
+   =============================== */
+
+.back {
+  background: #f7f7f7;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qr {
+  width: 45%;
+  max-width: 140px;
+}
+
+.backLogo {
+  width: 35%;
+  opacity: 0.9;
+}
+
+.back img {
+  width: 50%;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+    height: 17rem;
+  }
+}

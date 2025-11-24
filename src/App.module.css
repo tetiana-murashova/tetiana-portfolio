@@ -1,0 +1,63 @@
+.navbarWrapper {
+  height: 6.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgb(60, 63, 65);
+  display: flex;
+  justify-content: center;
+  z-index: 9;
+}
+.navbar {
+  width: 120rem;
+  display: flex;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  color: #eee;
+  align-items: center;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  height: 6rem;
+  padding-left: 2rem;
+}
+.logo {
+  height: 4.6rem;
+}
+.brandText {
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.menuLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+.menuLink:hover {
+  background: var(--accent);
+  color: #333;
+}
+
+.main {
+  padding-top: 6.5rem;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+.section,
+[id] {
+  scroll-margin-top: 7rem;
+}
