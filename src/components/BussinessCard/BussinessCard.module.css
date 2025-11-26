@@ -161,7 +161,17 @@
 
 @media (max-width: 480px) {
   .wrapper {
-    width: 90%;
+    width: 100%;
     height: 17rem;
+  }
+  .bigwrapper {
+    margin: 0.8rem;
+  }
+  .frontLeft {
+    width: 1%;
+    visibility: hidden;
+  }
+  .frontRight {
+    width: 100%;
   }
 }

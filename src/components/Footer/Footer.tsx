@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className={styles.block}>
         <div className={styles.copy}>© {new Date().getFullYear()} Tetiana Murashova</div>
         <div className={styles.right}>
-          <span>Made with React + TS</span>
+          <span>Made with React + TS + AWS</span>
           <SocialLinks />
         </div>
       </div>

@@ -76,8 +76,8 @@
   .panel {
     grid-template-columns: 1fr;
     text-align: left;
-    top: 50%;
-    left: 10%;
+    top: 10%;
+    left: 5%;
   }
   .avatar {
     width: 160px;

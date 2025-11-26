@@ -15,3 +15,6 @@ npm run dev
 - CSS Modules
 - Vite
 # tetiana-portfolio
+
+## Prettier 
+npx prettier src --write
