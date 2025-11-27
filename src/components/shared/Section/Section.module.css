@@ -1,0 +1,20 @@
+.section {
+  /* NO fixed height, NO overflow hidden */
+  padding: 3rem 1.25rem;
+}
+
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* Background variants */
+.default {
+  background: #f5f5f7;
+  color: #222;
+}
+
+.dark {
+  background: #fff;
+  color: #1f2230;
+}
