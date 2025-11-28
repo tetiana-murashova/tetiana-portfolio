@@ -1,3 +1,8 @@
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --accent: #ffa500;
   --text: #222;
@@ -25,7 +30,7 @@ body {
     'Segoe UI Emoji';
   color: var(--text);
   background: #fff;
-  overflow: auto;
+  /* overflow: auto; */
   height: 100%;
 }
 html,
