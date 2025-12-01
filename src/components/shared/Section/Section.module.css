@@ -1,4 +1,5 @@
-.projectsSection {
+.section {
+  /* NO fixed height, NO overflow hidden */
   padding: 3rem 1.25rem;
 }
 

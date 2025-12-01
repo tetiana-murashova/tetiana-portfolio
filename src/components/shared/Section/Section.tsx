@@ -9,7 +9,7 @@ type SectionProps = {
 
 const Section: React.FC<SectionProps> = ({ id, bg = 'default', children }) => {
   return (
-    <section id={id} className={`${styles.projectsSection} ${styles[bg]}`}>
+    <section id={id} className={`${styles.section} ${styles[bg]}`}>
       <div className={styles.inner}>{children}</div>
     </section>
   );
