@@ -1,18 +1,30 @@
 import React from 'react';
-import styles from './Section.module.css';
+import { motion } from 'framer-motion';
 
 type SectionProps = {
   id?: string;
-  bg?: 'default' | 'dark';
   children: React.ReactNode;
+  bg?: 'default' | 'muted' | 'dark';
 };
 
-const Section: React.FC<SectionProps> = ({ id, bg = 'default', children }) => {
-  return (
-    <section id={id} className={`${styles.section} ${styles[bg]}`}>
-      <div className={styles.inner}>{children}</div>
-    </section>
-  );
+const bgMap = {
+  default: '#fff',
+  muted: 'var(--bg)',
+  dark: 'rgba(61,63,65,.5)',
 };
+
+const Section: React.FC<SectionProps> = ({ id, children, bg = 'default' }) => (
+  <section id={id} style={{ background: bgMap[bg] }}>
+    <motion.div
+      className="section"
+      initial={{ opacity: 0, y: 32 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+    >
+      {children}
+    </motion.div>
+  </section>
+);
 
 export default Section;
