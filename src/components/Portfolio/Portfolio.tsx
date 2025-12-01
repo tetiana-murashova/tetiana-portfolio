@@ -35,7 +35,7 @@ const projects: Project[] = [
     excerpt:
       'A small React app that randomly selects and formats excuses from a JSON dataset. Includes category filtering, clipboard copy, and animated UI feedback.',
     image: 'portfolio/p3.png',
-    href: 'https://excuse-generator-machine-5pdtah04c-tetianas-projects-c71d5b21.vercel.app',
+    href: 'https://excuse-generator-machine.vercel.app',
   },
   {
     id: 'p4',
