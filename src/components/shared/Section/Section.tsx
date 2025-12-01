@@ -3,7 +3,7 @@ import styles from './Section.module.css';
 
 type SectionProps = {
   id?: string;
-  bg?: 'default' | 'dark' | 'muted';
+  bg?: 'default' | 'dark';
   children: React.ReactNode;
 };
 
